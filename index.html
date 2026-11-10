@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>比价 · 淘宝返利查询助手</title>
+<meta name="description" content="粘贴淘口令，查返利、比历史价——下单前先看看省多少。">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:-apple-system,"PingFang SC","Helvetica Neue",sans-serif; color:#1c1c1e; background:#f7f7f8; line-height:1.7; }
+  .wrap { max-width:720px; margin:0 auto; padding:0 20px; }
+  header { padding:56px 0 32px; text-align:center; }
+  .logo { font-size:44px; }
+  h1 { font-size:30px; margin:12px 0 8px; letter-spacing:1px; }
+  .tag { color:#666; font-size:15px; }
+  .card { background:#fff; border-radius:14px; padding:24px; margin:18px 0; box-shadow:0 1px 4px rgba(0,0,0,.05); }
+  .steps { display:flex; gap:14px; }
+  .step { flex:1; text-align:center; }
+  .step .n { width:34px; height:34px; border-radius:50%; background:#ff6a00; color:#fff; font-weight:600; display:inline-flex; align-items:center; justify-content:center; margin-bottom:8px; }
+  .step b { display:block; font-size:14px; margin-bottom:4px; }
+  .step p { font-size:12.5px; color:#777; }
+  h2 { font-size:19px; margin-bottom:12px; }
+  ul.feat { list-style:none; }
+  ul.feat li { padding:10px 0 10px 30px; position:relative; border-bottom:1px solid #f0f0f0; font-size:14.5px; }
+  ul.feat li:last-child { border:none; }
+  ul.feat li::before { content:"✓"; position:absolute; left:0; color:#ff6a00; font-weight:700; }
+  .demo { background:#faf7f4; border:1px dashed #ffb380; }
+  .demo code { display:block; background:#fff; border:1px solid #eee; border-radius:8px; padding:10px 12px; font-size:13px; color:#444; margin:8px 0; word-break:break-all; }
+  .note { font-size:12px; color:#999; text-align:center; padding:28px 0 36px; }
+  .btn { display:inline-block; background:#ff6a00; color:#fff; padding:12px 34px; border-radius:24px; text-decoration:none; font-weight:600; margin-top:14px; }
+  @media (max-width:560px){ .steps{flex-direction:column;} }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo">🧮</div>
+    <h1>比价 · 返利查询助手</h1>
+    <p class="tag">粘贴淘口令，先查返利再下单——同样的东西，省看得见的钱</p>
+  </header>
+
+  <div class="card">
+    <h2>三步省钱</h2>
+    <div class="steps">
+      <div class="step"><div class="n">1</div><b>复制淘口令</b><p>在淘宝/天猫点「分享」复制商品口令或链接</p></div>
+      <div class="step"><div class="n">2</div><b>粘贴查返利</b><p>把口令粘进来，一秒查出佣金返利与优惠</p></div>
+      <div class="step"><div class="n">3</div><b>转链下单</b><p>通过返利链接下单，确认收货后返利到账</p></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>能干啥</h2>
+    <ul class="feat">
+      <li><b>淘口令/链接解析</b>——手机复制啥就贴啥，自动认出商品</li>
+      <li><b>返利金额预估</b>——按当前佣金率算出下单能返多少</li>
+      <li><b>无佣提示</b>——商品不在推广计划会明说「暂无返利」，不糊弄</li>
+      <li><b>同款比价</b>——同关键词多店铺价格对比，挑最划算的一单</li>
+    </ul>
+  </div>
+
+  <div class="card demo">
+    <h2>试试看</h2>
+    <p style="font-size:13.5px;color:#666">把淘宝分享出来的口令贴在这里：</p>
+    <code>￥ABCDEFG￥ 复制这条信息，打开淘宝即可查看</code>
+    <code>https://detail.tmall.com/item.htm?id=xxxxxxxx</code>
+    <p style="font-size:13px;color:#999">（交互版内测中，即将开放）</p>
+    <a class="btn" href="#faq">了解返利规则</a>
+  </div>
+
+  <div class="card" id="faq">
+    <h2>常见问题</h2>
+    <p style="font-size:14px"><b>返利哪来的？</b><br>商家在淘宝联盟投放推广佣金，我们帮你查到并把大部分佣金返还给你。</p>
+    <p style="font-size:14px;margin-top:12px"><b>会影响下单价吗？</b><br>不会。返利是商家给的推广费，商品价格、售后与正常下单完全一致。</p>
+    <p style="font-size:14px;margin-top:12px"><b>哪些商品没返利？</b><br>百亿补贴直降类、部分大牌标品佣金薄或不在联盟池，页面会如实提示。</p>
+  </div>
+
+  <p class="note">比价 · 返利查询助手 — 本站为淘宝联盟合作推广站点，商品信息来自联盟开放平台<br>© 2026 比价工具</p>
+</div>
+</body>
+</html>
